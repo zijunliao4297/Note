@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Note</string>
+
+    <!--hint about note editor-->
+    <string name="hint_title">Enter note title…</string>
+    <string name="hint_content">Enter content…</string>
+
+    <!--hint about note delete-->
+    <string name="snack_message">Delete a note</string>
+    <string name="snack_action">Restore</string>
+
+    <!--chip titles-->
+    <string name="timestamp">Timestamp</string>
+    <string name="title">Title</string>
+    <string name="color">Color</string>
+
+    <!--menu titles-->
+    <string name="menu_arrange">Arrangement</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_search">Search</string>
+    <string name="desc_order">Order</string>
+    <string name="desc_add_note">Add a new note</string>
+
+    <!--strings about searching-->
+    <string name="hint_search">Search by title or content…</string>
+    <string name="recent_search">Recently Search</string>
+    <string name="no_data_title">No Note Found</string>
+    <string name="no_data_content">Try another keywords?</string>
+
+    <!--notes of first open-->
+    <string-array name="tutorial_titles">
+        <item>About the user privacy</item>
+        <item>How to Usage?</item>
+        <item>Welcome to the Note App</item>
+    </string-array>
+    <string-array name="tutorial_contents">
+        <item>All of the note data are only stored in the local device.\nIt also means no backup data can be used when you delete or change to the new device.\nBut you can sync your data to new Android device by your Google account.</item>
+        <item>1. Click the + button to create your first note or edit the existed.\n2. You can delete your note by swipe to right or left.\n3. Click your note to show more content or edit on it.\n4. You can sort all notes by timestamp, title or color with the ascending or descending ordination.</item>
+        <item>You can keep any message in this app.\nHope you enjoy it!</item>
+    </string-array>
+
+    <!--material transition names-->
+    <string name="transition_from_listFragment_to_showFragment">transition_from_listFragment_to_showFragment%1$d</string>
+    <string name="transition_from_findFragment_to_showFragment">transition_from_findFragment_to_showFragment%1$d</string>
+    <string name="transition_from_listFragment_to_editFragment">transition_from_listFragment_to_editFragment</string>
+    <string name="transition_to_showFragment">transition_to_showFragment</string>
+    <string name="transition_to_editFragment">transition_to_editFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

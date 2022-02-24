@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@{model.note.backgroundColor}"
+        android:orientation="vertical"
+        android:transitionName="@string/transition_to_editFragment"
+        tools:context=".presentation.fragments.edit.NoteEditFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_900"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(0)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(0)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(0) ? R.drawable.ic_baseline_circle_24 : -1}" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(1)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(1)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(1) ? R.drawable.ic_baseline_circle_24 : -1}" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(2)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(2)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(2) ? R.drawable.ic_baseline_circle_24 : -1}" />
+
+            <ImageView
+                android:id="@+id/amber"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(3)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(3)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(3) ? R.drawable.ic_baseline_circle_24 : -1}" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(4)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(4)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(4) ? R.drawable.ic_baseline_circle_24 : -1}" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(5)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(5)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(5) ? R.drawable.ic_baseline_circle_24 : -1}" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_circle"
+                android:onClick="@{()->model.setColorTint(6)}"
+                android:padding="12dp"
+                app:backgroundTint="@{model.getColorTint(6)}"
+                app:srcCompat="@{model.note.backgroundColor == model.getColorTint(6) ? R.drawable.ic_baseline_circle_24 : -1}" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/hint_title"
+            android:inputType="textPersonName"
+            android:maxLength="32"
+            android:paddingStart="15dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="7dp"
+            android:text="@={model.note.title}"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_third"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/hint_content"
+            android:inputType="textMultiLine|textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@={model.note.content}"
+            android:textColor="@color/black_secondary"
+            android:textColorHint="@color/black_third"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/gray_900"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_format_list_numbered_24" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_format_underlined_24" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_format_italic_24" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_format_bold_24" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ic_baseline_format_strikethrough_24" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <data>
+
+        <import type="idv.zijunliao.note.R" />
+
+        <variable
+            name="model"
+            type="idv.zijunliao.note.presentation.fragments.edit.NoteEditViewModel" />
+    </data>
+</layout>

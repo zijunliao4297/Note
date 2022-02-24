@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.16197916666666667" />
+        <entry key="..\:/T829-Folder/Desktop/Note/app/src/main/res/layout/content_main.xml" value="0.33125" />
+        <entry key="..\:/T829-Folder/Desktop/Note/app/src/main/res/layout/content_search.xml" value="0.3734375" />
+        <entry key="..\:/T829-Folder/Desktop/Note/app/src/main/res/layout/fragment_note_edit.xml" value="0.33125" />
+        <entry key="..\:/T829-Folder/Desktop/Note/app/src/main/res/layout/fragment_note_list.xml" value="0.3734375" />
+        <entry key="app/src/main/res/drawable/bg_circle_16.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/selector_chip_state.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/shape_circle.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/shape_ring.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/span_count_state.xml" value="0.1315" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_search.xml" value="0.15782114664713542" />
+        <entry key="app/src/main/res/layout/fragment_note_edit.xml" value="0.21370967741935484" />
+        <entry key="app/src/main/res/layout/fragment_note_find.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_note_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_note_show.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/layout_chip_item.xml" value="0.16666666666666666" />
+        <entry key="app/src/main/res/layout/layout_note_hint.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/layout_note_item.xml" value="0.21285140562248997" />
+        <entry key="app/src/main/res/menu/list_menu.xml" value="0.3776041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.16666666666666666" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
